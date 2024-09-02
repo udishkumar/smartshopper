@@ -60,8 +60,11 @@ export class AppComponent implements OnInit {
   selectedOrder = 'asc';
   selectedProduct: any = null;
   wishlistProducts: any[] = [];
-  serverUrl: string = 'http://localhost:8080';
+  
+  // serverUrl: string = 'http://localhost:8080';
   // serverUrl: string = 'https://uk-hw3.wl.r.appspot.com';
+
+  serverUrl: string = 'https://smartshoprr.netlify.app';
   matchingProduct: any;
   wishlistActive: boolean = false;
   resultSectionActive: boolean = true;
