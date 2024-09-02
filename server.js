@@ -18,9 +18,7 @@ const encodedPassword = encodeURIComponent("Karma@181818181");
 const uri = `mongodb+srv://udishkum:${encodedPassword}@cluster0.2gusddi.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 app.use(express.json());
-app.use(cors({
-    origin: '*', // Allows all origins. Replace '*' with your frontend's URL in production for more security
-}));
+app.use(cors());
 
 
 app.get('/fetchPostalCodes', async (req, res) => {
@@ -456,6 +454,6 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something broke!');
 });
 
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
