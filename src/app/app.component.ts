@@ -60,8 +60,8 @@ export class AppComponent implements OnInit {
   selectedOrder = 'asc';
   selectedProduct: any = null;
   wishlistProducts: any[] = [];
-  // serverUrl: string = 'http://localhost:8080';
-  serverUrl: string = 'https://uk-hw3.wl.r.appspot.com';
+  serverUrl: string = 'http://localhost:8080';
+  // serverUrl: string = 'https://uk-hw3.wl.r.appspot.com';
   matchingProduct: any;
   wishlistActive: boolean = false;
   resultSectionActive: boolean = true;
